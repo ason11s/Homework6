@@ -92,12 +92,8 @@ public class Main {
 
         int daysMonth = 31;
         int firstFriday = 5;
-        int day = 1;
-        while (day <= daysMonth) {
-            if ((day - firstFriday) % 7 == 0) {
-                System.out.println(" Сегодня пятница " + day + " число ");
-            }
-            day++;
+        for (int day = firstFriday; day<daysMonth; day+=7){
+            System.out.println("Сегодня пятница," + day+ "-е число. Необходимо подготовить отчет");
         }
 
         // Task 8
